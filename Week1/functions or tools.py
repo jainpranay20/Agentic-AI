@@ -21,4 +21,6 @@ def get_weather(city: str) -> str:
     return fake_weather_data.get(city.lower(), f"No weather data for {city!r}")
 
 
-
+print(get_weather("Tokyo"))
+print(get_weather("Delhi"))
+print(get_weather("Londo"))
