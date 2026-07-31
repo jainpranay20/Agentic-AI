@@ -70,3 +70,33 @@ print(slow_greeting("Pragati"))  # example uses Pragati as the learner name
 if __name__ == "__main__":
     print("\nDecorators done. Nothing above mentioned tools or agents once.")
     print("File 10 today reuses this exact pattern -- the wrapper idea, applied to something real.")
+
+
+def logger(func):
+    def wrapper():
+        print("Function started")
+        func()
+        print("Function ended")
+        print("-" * 20)  # Separator for readability
+    return wrapper
+
+
+@logger
+def greet():
+    print("Hello")
+
+
+@logger
+def bye():
+    print("Bye")
+
+
+# Call the decorated functions
+greet()
+bye()
+
+# equivalent to write 
+def greet():
+    print("Hello")
+
+greet = logger(greet)

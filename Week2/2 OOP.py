@@ -159,3 +159,44 @@ p1 = Person("Alice", 25)
 print(p1)
 print(p1.name)
 print(p1.age)
+
+
+# class Person:
+#     def __init__(self, name, age, city="Unknown"):
+#         self.name = name
+#         self.age = age
+#         self.city = city
+
+
+# p1 = Person("Alice", 25)
+# print(p1)
+# print(p1.name)
+# print(p1.age)
+
+
+# java 
+
+# public class Person {
+#     private String name;
+#     private int age;
+#     private String city;
+
+#     public Person(String name, int age) {
+#         this(name, age, "Unknown");
+#     }
+
+#     public Person(String name, int age, String city) {
+#         this.name = name;
+#         this.age = age;
+#         this.city = city;
+#     }
+
+#     public static void main(String[] args) {
+#         Person p1 = new Person("Alice", 25);
+#         System.out.println(p1);
+#         System.out.println(p1.name);
+#         System.out.println(p1.age);
+#     }
+# }
+
+

@@ -30,7 +30,9 @@ def convert_currency(amount: float, from_currency: str, to_currency: str) -> flo
             timeout=10,
         )
         response.raise_for_status()
+        print("Status code:", response.json())
         rate = response.json()["rates"][to_currency.upper()]
+        print("rate", rate)
         return round(amount * rate, 2)
     except requests.exceptions.RequestException as exc:
         return f"Couldn't reach the currency service: {exc}"
