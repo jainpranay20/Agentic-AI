@@ -30,7 +30,7 @@ def greet(name):
     return f"Hello, {name}!"
 
 
-print(greet("Pragati"))  # example uses Pragati as the learner name
+print(greet("pranay"))  # example uses pranay as the learner name
 
 
 def timed(func):
@@ -64,7 +64,7 @@ def slow_greeting(name):
     return f"Hello there, {name}!"
 
 
-print(slow_greeting("Pragati"))  # example uses Pragati as the learner name
+print(slow_greeting("pranay"))  # example uses pranay as the learner name
 
 
 if __name__ == "__main__":

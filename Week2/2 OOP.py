@@ -69,8 +69,8 @@ class BankAccount:
 
 
 # Build TWO separate accounts from the same blueprint -- each has its own state.
-account_1 = BankAccount(owner="Pragati", balance=1000)
-account_2 = BankAccount(owner="Pragati", balance=500)
+account_1 = BankAccount(owner="pranay", balance=1000)
+account_2 = BankAccount(owner="pranay", balance=500)
 
 account_1.deposit(200)
 account_1.withdraw(50)
