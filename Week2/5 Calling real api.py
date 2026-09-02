@@ -30,7 +30,7 @@ def convert_currency(amount: float, from_currency: str, to_currency: str) -> flo
             timeout=10,
         )
         response.raise_for_status()
-        print("Status code:", response.json())
+        print("Status code:", response)
         rate = response.json()["rates"][to_currency.upper()]
         print("rate", rate)
         return round(amount * rate, 2)
