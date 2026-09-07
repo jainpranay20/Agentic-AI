@@ -185,7 +185,7 @@ def fetch_text_from_url(url: str) -> str:
 
 ### 💾 Memory — Local Run vs. Persistent
 
-- 🔬 **Live demo:** sent `"Hi, I am Mayank"` then `"Who am I?"` in **two separate script runs** → agent had no idea, because that "memory" only exists while the Python process is actively running
+- 🔬 **Live demo:** sent `"Hi, I am Pranay"` then `"Who am I?"` in **two separate script runs** → agent had no idea, because that "memory" only exists while the Python process is actively running
 - Real persistence needs an explicit store: a database, a file, or a dedicated memory/checkpoint mechanism
 - ⚠️ **On caching tool results — context matters, not a blanket rule:**
   - Stock prices → **never cache** (change every second)
